@@ -1,4 +1,4 @@
-﻿
+﻿// Сравнить три введёных числа и вывести большее
 Console.Write(" Введите первое число: ");
 int num1 = int.Parse(Console.ReadLine()!);
 

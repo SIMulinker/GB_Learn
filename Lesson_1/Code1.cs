@@ -1,4 +1,4 @@
-﻿
+﻿// вывести на экран большее из двух чисел
 Console.Write(" Введите первое число: ");
 int num1 = int.Parse(Console.ReadLine()!);
 
