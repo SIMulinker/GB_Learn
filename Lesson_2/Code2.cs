@@ -8,11 +8,11 @@ if (num1 < 0) num1 = -num1;// а вдруг отрицательное
 if (num1 < 100) Console.Write(" меньше трёх цифр ");
 
 //На тот случай если цифр будет больше трех
-while (num1 >= 1000)
+while (num1 > 999)
 {
     num1 = num1 / 10;
 }
 //выделяем третью из числа
-int num_up = (num1 % 1000) / 100;
+int num_up = num1 % 10;
 
-Console.Write(" Третья цифра: " + num1);
+Console.Write(" Третья цифра: " + num_up);
