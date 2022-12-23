@@ -2,7 +2,7 @@
  Задайте двумерный массив размером m×n, 
  заполненный случайными вещественными числами.
  */
-bool MANUAL = true;
+bool MANUAL = false;
 int horz = new Random().Next(5, 16);
 int vert = new Random().Next(5, 16);
 int min = new Random().Next(-20, 1);
@@ -24,13 +24,13 @@ else
     Console.WriteLine($"Hello, World!\r\nSize of ({horz},{vert}) at [{min}..{max}] value is generated");
 }
 
-double[,] matrix = fillArray(vert, horz, min, max);
-Console.Write(matrixToString(matrix));
+double[,] matrix = FillArray(vert, horz, min, max);
+Console.Write(MatrixToString(matrix));
 
 
 
 
-double[,] fillArray(int size1, int size2, int fmin, int fmax)
+double[,] FillArray(int size1, int size2, int fmin, int fmax)
 {
     double[,] field = new double[size1, size2];// int[] linear = new int[number];
 
@@ -44,7 +44,7 @@ double[,] fillArray(int size1, int size2, int fmin, int fmax)
     return field;
 }
 
-string matrixToString(double[,] arr)
+string MatrixToString(double[,] arr)
 {
     string OUT = "";
     int ilen = arr.GetLength(0);
